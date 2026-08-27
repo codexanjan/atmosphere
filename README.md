@@ -1,61 +1,103 @@
-# 🌤️ Atmosphere — Modern Weather Intelligence Dashboard
+<div align="center">
 
-A production-grade, highly responsive, and feature-rich weather forecasting application built with **React**, **Vite**, **Lucide Icons**, and **Recharts**.
+# 🌤️ Atmosphere
+### *Modern Real-Time Weather Intelligence & Atmospheric Canvas*
 
-Atmosphere provides real-time atmospheric measurements, 24-hour hourly tracks, 7-day extended forecasts, interactive temperature & precipitation charts, air quality metrics (AQI & pollutants), sunrise/sunset solar trajectory arcs, severe weather alerts, favorite locations management, and search history with persistent storage.
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Preview-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://codexanjan.github.io/atmosphere/)
+[![GitHub Stars](https://img.shields.io/github/stars/codexanjan/atmosphere?style=for-the-badge&color=eab308)](https://github.com/codexanjan/atmosphere/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/codexanjan/atmosphere?style=for-the-badge&color=a855f7)](https://github.com/codexanjan/atmosphere/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+<p align="center">
+  <b>A hyper-responsive, fluid, glassmorphic weather forecasting intelligence dashboard built with React 18, Vite, Lucide Icons, and Recharts.</b>
+</p>
+
+<p align="center">
+  <a href="#-key-features">Key Features</a> •
+  <a href="#-live-demo">Live Demo</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-deployment">Deployment</a> •
+  <a href="#-author">Author</a>
+</p>
 
 ---
 
-## ✨ Features
+![Atmosphere Dashboard Preview](https://raw.githubusercontent.com/codexanjan/atmosphere/main/public/favicon.svg)
 
-- **🔍 Smart City & Location Search**: Search any city, state, or country worldwide with debounced autocomplete suggestions and full keyboard navigation.
-- **📍 GPS Geolocation ("My Location")**: Instant 1-click device geolocation lookup with permission error handling and fallback.
-- **🌡️ Current Weather Hero**: Displays real-time temperature, condition badge, animated weather icon, "feels-like" temperature, local time & date in location's timezone, and daily high/low.
-- **📊 8 Detailed Weather Metric Cards**:
-  - **Humidity** (%) with dew point reference
-  - **Wind** (speed + cardinal direction + compass degree)
-  - **UV Index** with color-coded risk category & sun safety recommendations
-  - **Visibility** (km / mi) with atmospheric clarity rating
-  - **Pressure** (hPa / inHg) with barometric condition
-  - **Cloud Cover** (%)
-  - **Dew Point** (°C / °F)
-  - **Precipitation** (mm / in)
-- **⏱️ 24-Hour Hourly Forecast**: Smooth horizontally scrollable carousel with time, weather icons, temperatures, and rain probabilities.
-- **📅 7-Day Extended Forecast**: Daily forecast list with condition badges, rain chance, and proportional temperature range gradient bars.
-- **📈 Interactive Weather Charts (Recharts)**:
-  - **Temperature Trend**: Smooth gradient area chart across upcoming hours.
-  - **Precipitation Probability**: Hourly rain chance (%) and volume bar chart.
-- **🌅 Solar Cycle & Sun Arc**: Visual solar trajectory tracker with calculated daylight duration, sunrise time, and sunset time.
-- **🍃 Air Quality Index (AQI)**: US EPA AQI score, health status category, and pollutant breakdown (PM2.5, PM10, O₃, NO₂, SO₂, CO).
-- **⚠️ Severe Weather Alerts**: Real-time storm and safety warnings or clean "No active alerts" badge.
-- **❤️ Favorite Locations**: Bookmark favorite cities with quick preview cards, live weather stats, and persistent `localStorage` storage.
-- **🕒 Recent Searches**: Quick-access history chips with one-click reload and history clearing.
-- **🔄 Instant Unit Conversion**: Seamless toggle between Celsius (°C) and Fahrenheit (°F) across all metrics and charts without full page reloading.
-- **🌓 Dark & Light Modes**: Seamless CSS custom properties theme engine with system preference auto-detection and persistence.
-- **🎨 Dynamic Atmospheric Ambience**: Subtle background shifts reflecting live weather conditions (Clear Day, Clear Night, Rain, Thunderstorm, Snow, Fog).
-- **⚡ Dual-Engine Weather API Architecture**:
-  - Out-of-the-box support for **WeatherAPI.com** (`VITE_WEATHER_API_KEY`).
-  - Seamless zero-config automatic fallback to **Open-Meteo API** (guaranteeing instant out-of-the-box functionality without requiring an API key).
+</div>
+
+---
+
+## ⚡ Why Atmosphere?
+
+Atmosphere isn't just another weather widget — it's a **complete atmospheric command center**. Powered by a **zero-config dual-engine fallback architecture**, it pulls high-resolution meteorological models in real time, visualizes temperature trends with interactive gradient graphs, calculates solar trajectories, tracks air quality (AQI) with pollutant breakdowns, and immerses users with dynamic particle weather canvases.
+
+---
+
+## ✨ Key Features
+
+| Feature | Description |
+| :--- | :--- |
+| **🔍 Instant Global Search** | Search any city, capital, or region worldwide with debounced autocomplete suggestions & full keyboard navigation. |
+| **📍 1-Click GPS Geolocation** | Instant device-based geolocation lookup with intelligent fallback and permission recovery. |
+| **🌡️ Real-Time Hero Card** | Dynamic condition badge, animated weather icon, "feels-like" metrics, timezone-adjusted local time, and daily min/max. |
+| **📊 8 Detailed Metric Cards** | Humidity, Wind Velocity & Direction, UV Index with sun safety advice, Atmospheric Clarity, Pressure, Cloud Cover, Dew Point, and Precipitation. |
+| **⏱️ 24-Hour Hourly Track** | Scrollable 24-hour carousel with hourly condition icons, exact temperatures, and rain probability. |
+| **📅 7-Day Extended Forecast** | Comprehensive 7-day outlook with proportional gradient temperature bars and precipitation likelihood. |
+| **📈 Interactive Recharts** | High-precision interactive area charts for temperature gradients and bar charts for precipitation probabilities. |
+| **🌅 Solar Arc & Daylight Cycle** | Real-time solar trajectory simulation displaying exact daylight duration, sunrise, and sunset times. |
+| **🍃 Air Quality Index (AQI)** | EPA-standard AQI score, health advisory level, and detailed micro-pollutant metrics (PM2.5, PM10, O₃, NO₂, SO₂, CO). |
+| **⚠️ Weather Alerts System** | Real-time severe weather warnings, gale advisories, and meteorological alerts. |
+| **❤️ Saved Favorite Locations** | Bookmark favorite cities with quick preview cards, live mini-stats, and persistent `localStorage` synchronization. |
+| **🕒 Recent Searches** | Instant-access chips for your recently visited locations with one-click purge. |
+| **🎨 Dynamic Canvas & Particles** | Interactive background canvas generating real-time falling rain streaks, floating snowflakes, and starry nocturnal skies. |
+| **🌓 Adaptive Dark / Light / Aurora** | Seamless theme engine with system auto-detection and persistence. |
+| **🔄 Instant Metric Toggle** | Switch between Metric (°C, km/h, hPa) and Imperial (°F, mph, inHg) across all components without reload. |
+
+---
+
+## 🏗️ Architecture & Dual-Engine Fallback
+
+Atmosphere is designed for **100% uptime reliability** through an automated multi-provider failover system:
+
+```mermaid
+flowchart TD
+    A[User Search / Geolocation] --> B{API Key Available?}
+    B -- Yes --> C[WeatherAPI.com Client]
+    B -- No / Network Failure --> D[Open-Meteo Open API Fallback]
+    C -- Normalize Data --> E[Unified Weather Schema]
+    D -- Normalize Data --> E
+    E --> F[React State & Custom Hooks]
+    F --> G[Interactive Visual Dashboard]
+    F --> H[Atmosphere Dynamic Particle Canvas]
+    F --> I[Recharts Graphs & AQI Metrics]
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [React 18](https://react.dev/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Charts**: [Recharts](https://recharts.org/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Styling**: Vanilla CSS with CSS Custom Properties, Glassmorphism & Responsive Grid
-- **Storage**: Browser `localStorage`
+- **Core**: [React 18](https://react.dev/) (Hooks, Context, Memoization)
+- **Bundler & Dev Server**: [Vite 6](https://vitejs.dev/)
+- **Charts & Data Visuals**: [Recharts](https://recharts.org/)
+- **Iconography**: [Lucide React](https://lucide.dev/)
+- **Canvas Particle Engine**: Vanilla HTML5 2D Canvas with `requestAnimationFrame`
+- **Styling**: Vanilla CSS with CSS Custom Properties, Glassmorphism, and Fluid CSS Grid
+- **State & Storage**: React Hooks (`useWeather`, `useLocalStorage`) + Browser `localStorage`
 
 ---
 
 ## 📂 Project Structure
 
 ```
-weather-app/
+atmosphere/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml           # Automated GitHub Pages CI/CD
 ├── public/
-│   └── favicon.svg              # App Favicon
+│   └── favicon.svg              # App Logo & Favicon
 ├── src/
 │   ├── components/
 │   │   ├── AirQuality.jsx       # AQI score & pollutant levels
@@ -101,78 +143,64 @@ weather-app/
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-### 1. Prerequisites
-- **Node.js** (v18 or higher recommended)
-- **npm** or **yarn** / **pnpm**
+### 1. Clone the repository
+```bash
+git clone https://github.com/codexanjan/atmosphere.git
+cd atmosphere
+```
 
-### 2. Installation
-
-Clone or open the project directory and install dependencies:
-
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 3. Environment Configuration (Optional)
-
-Atmosphere comes with an automatic **Open-Meteo** dual-engine fallback that works immediately without any API key.
-
-If you wish to use [WeatherAPI.com](https://www.weatherapi.com/):
-1. Copy `.env.example` to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-2. Insert your free WeatherAPI.com key:
-   ```env
-   VITE_WEATHER_API_KEY=your_api_key_here
-   ```
-
-### 4. Running Locally
-
-Start the Vite development server:
-
+### 3. Start development server
 ```bash
 npm run dev
 ```
+> The dashboard will immediately boot at `http://localhost:3000`.
 
-The app will be available at `http://localhost:3000` (or the port specified in terminal).
-
-### 5. Building for Production
-
-To create an optimized production build:
-
+### 4. (Optional) Custom API Key
+Atmosphere works out of the box with zero configuration via **Open-Meteo**. If you wish to use [WeatherAPI.com](https://www.weatherapi.com/):
 ```bash
-npm run build
+cp .env.example .env
 ```
-
-To preview the production bundle locally:
-
-```bash
-npm run preview
+Add your API key to `.env`:
+```env
+VITE_WEATHER_API_KEY=your_api_key_here
 ```
 
 ---
 
-## 📱 Responsive Testing & Accessibility
+## 🌐 Deployment
 
-The design is fully mobile-first and tested across:
-- Mobile devices (320px, 375px, 425px)
-- Tablets (768px, 1024px)
-- Laptops and high-DPI desktop screens (1440px+)
+### GitHub Pages (Automated via GitHub Actions)
+Atmosphere includes `.github/workflows/deploy.yml`. 
+1. In your GitHub repository, go to **Settings** > **Pages**.
+2. Under **Source**, select **GitHub Actions**.
+3. Any push to `main` will automatically build and publish the live app to:
+   **`https://codexanjan.github.io/atmosphere/`**
 
-Includes ARIA attributes, semantic landmarks, high color contrast, keyboard-accessible dropdowns, and responsive charts.
+### Vercel / Netlify
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/codexanjan/atmosphere)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/codexanjan/atmosphere)
 
 ---
 
-## 👨‍💻 Author
+## 🌟 Show your support
 
-**Anjan Shetty**
-- GitHub: [@codexanjan](https://github.com/codexanjan)
+If you like this project, please give it a **⭐ Star** on GitHub! It helps more developers discover Atmosphere.
 
 ---
 
 ## 📄 License
 
-MIT License © Atmosphere Weather. Built with ❤️ by [Anjan Shetty](https://github.com/codexanjan).
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+  <b>Crafted with ❤️ by <a href="https://github.com/codexanjan">Anjan Shetty</a></b>
+</div>
