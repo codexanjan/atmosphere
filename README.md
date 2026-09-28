@@ -22,9 +22,9 @@
   <a href="#-author">Author</a>
 </p>
 
----
-
-![Atmosphere Dashboard Preview](https://raw.githubusercontent.com/codexanjan/atmosphere/main/public/favicon.svg)
+<p align="center">
+  <img src="assets/preview.png" alt="Atmosphere Dashboard Preview" width="100%" style="border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,0.5);" />
+</p>
 
 </div>
 
