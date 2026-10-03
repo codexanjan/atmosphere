@@ -3,9 +3,10 @@
 # 🌤️ Atmosphere
 ### *Modern Real-Time Weather Intelligence & Atmospheric Canvas*
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20Preview-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://codexanjan.github.io/atmosphere/)
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Preview-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://atmosphere-weather.vercel.app)
 [![GitHub Stars](https://img.shields.io/github/stars/codexanjan/atmosphere?style=for-the-badge&color=eab308)](https://github.com/codexanjan/atmosphere/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/codexanjan/atmosphere?style=for-the-badge&color=a855f7)](https://github.com/codexanjan/atmosphere/network/members)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://atmosphere-weather.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <p align="center">
@@ -181,7 +182,7 @@ Atmosphere includes `.github/workflows/deploy.yml`.
 1. In your GitHub repository, go to **Settings** > **Pages**.
 2. Under **Source**, select **GitHub Actions**.
 3. Any push to `main` will automatically build and publish the live app to:
-   **`https://codexanjan.github.io/atmosphere/`**
+   **`https://atmosphere-weather.vercel.app`**
 
 ### Vercel / Netlify
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/codexanjan/atmosphere)
@@ -202,5 +203,13 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  <b>Crafted with ❤️ by <a href="https://github.com/codexanjan">Anjan Shetty</a></b>
+
+---
+
+<div align="center">
+
+Made with ❤️ by [Anjan Shetty](https://github.com/codexanjan)
+
+[![GitHub](https://img.shields.io/badge/GitHub-codexanjan-181717?style=flat&logo=github)](https://github.com/codexanjan)
+
 </div>
